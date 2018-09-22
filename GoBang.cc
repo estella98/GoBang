@@ -34,12 +34,15 @@ public:
       ComputerChess(P1, symbol1);
       if (Victory(P1, symbol1) == 1)
       {
+        cout << "here1" << endl;
         break;
       }
-      PlayChess(P2, 2, symbol2);
-  
+    
+       PlayChess(P2, 2, symbol2);
+     
       if (Victory(P2, symbol2) == 1)
       {
+        cout << "here2" << endl;
         break;
       }
     }
@@ -57,7 +60,7 @@ public:
   }
   void PrintChessBoard()
   {
-    system("clear");
+    //system("clear");
     for (int i = 0; i <= size; ++i)
     {
       if (i == 0)
@@ -107,7 +110,7 @@ public:
   }
   void PlayChess(Coordinate &pos, int player, int flag)
   {
-    PrintChessBoard();
+    
     while (1)
     {
       cout << "enter coordinate" << endl;
@@ -119,27 +122,27 @@ public:
       cout << "not valid" << endl;
     }
     ChessBoard[pos.x][pos.y] = flag;
+    PrintChessBoard();
   }
 
   void ComputerChess(Coordinate &pos, char flag)
   {
-
-    PrintChessBoard();
     int x = 0;
     int y = 0;
-
+    srand((unsigned int)time(NULL));
     while (1)
     {
       x = (rand() % size) + 1;
-      srand((unsigned int)time(NULL));
+
       y = (rand() % size) + 1;
-      srand((unsigned int)time(NULL));
+
       if (ChessBoard[x][y] == ChessBoardflag)
         break;
     }
     pos.x = x;
     pos.y = y;
     ChessBoard[pos.x][pos.y] = flag;
+    PrintChessBoard();
   }
 
   int JudgeValue(const Coordinate &pos) //judge if a coordinator is valid
@@ -160,8 +163,10 @@ public:
             (y < 15) && (y >= 0));
   }
 
-  int Victory(Coordinate pos, char flag)
-  {
+  int Victory(Coordinate &pos, char flag){
+    cout << "check" << flag << endl;
+    //cout << pos.x << endl;
+    //cout << pos.y << endl;
     for (int arrayPos = 0; arrayPos < 4; ++arrayPos)
     {
       int acc = 0;
@@ -175,9 +180,10 @@ public:
         bool inrange = checkInRange(coordinateX + addX, coordinateY + addY);
         if (inrange && ChessBoard[coordinateX + addX][coordinateY + addY] == flag)
         {
+          cout <<" match one" <<endl;
           acc += 1;
-          coordinateX += arrayX[arrayPos];
-          coordinateY += arrayY[arrayPos];
+          coordinateX += addX;
+          coordinateY += addY;
         }
         else
         {
@@ -197,6 +203,7 @@ public:
       }
       if (acc >= 4)
       {
+        cout << "win" << endl;
         return 1; // 1 represents victory
       }
     }
