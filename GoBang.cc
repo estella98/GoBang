@@ -3,9 +3,11 @@
 #include <stdlib.h>
 #include <time.h>
 
+#include <leveldb/dumpfile.h>
+
 using namespace std;
 
-const int size = 15;
+constexpr int SIZE = 15;
 const char ChessBoardflag = ' ';
 const char symbol1 = 'o';
 const char symbol2 = 'x';
@@ -30,16 +32,13 @@ public:
     int n = 0;
     while (1)
     {
-
       ComputerChess(P1, symbol1);
       if (Victory(P1, symbol1) == 1)
       {
         cout << "here1" << endl;
         break;
       }
-    
-       PlayChess(P2, 2, symbol2);
-     
+      ComputerChess(P2, symbol2);
       if (Victory(P2, symbol2) == 1)
       {
         cout << "here2" << endl;
@@ -50,9 +49,9 @@ public:
 
   void InitChessBoard()
   {
-    for (int i = 0; i <= size; ++i)
+    for (int i = 0; i <= SIZE; ++i)
     {
-      for (int j = 0; j <= size; ++j)
+      for (int j = 0; j <= SIZE; ++j)
       {
         ChessBoard[i][j] = ChessBoardflag;
       }
@@ -61,13 +60,13 @@ public:
   void PrintChessBoard()
   {
     //system("clear");
-    for (int i = 0; i <= size; ++i)
+    for (int i = 0; i <= SIZE; ++i)
     {
       if (i == 0)
       {
         printf(" ");
       }
-      for (int j = 0; j <= size; ++j)
+      for (int j = 0; j <= SIZE; ++j)
       {
         if (i == 0)
         {
@@ -92,7 +91,7 @@ public:
         }
         else
         {
-          if (i <= size)
+          if (i <= SIZE)
           {
 
             printf("%c |", ChessBoard[i][j]); // "%c |"
@@ -101,7 +100,7 @@ public:
       }
       cout << endl;
       cout << "  "; // " "
-      for (int m = 0; m < size; m++)
+      for (int m = 0; m < SIZE; m++)
       {
         printf("--|");
       }
@@ -132,9 +131,9 @@ public:
     srand((unsigned int)time(NULL));
     while (1)
     {
-      x = (rand() % size) + 1;
+      x = (rand() % SIZE) + 1;
 
-      y = (rand() % size) + 1;
+      y = (rand() % SIZE) + 1;
 
       if (ChessBoard[x][y] == ChessBoardflag)
         break;
@@ -147,7 +146,7 @@ public:
 
   int JudgeValue(const Coordinate &pos) //judge if a coordinator is valid
   {
-    if (pos.x > 0 && pos.x <= size && pos.y > 0 && pos.y <= size)
+    if (pos.x > 0 && pos.x <= SIZE && pos.y > 0 && pos.y <= SIZE)
     {
       if (ChessBoard[pos.x][pos.y] == ChessBoardflag)
       {
@@ -211,7 +210,7 @@ public:
   }
 
 private:
-  char ChessBoard[size + 1][size + 1];
+  char ChessBoard[SIZE + 1][SIZE + 1];
   static int arrayX[8];
   static int arrayY[8];
 };
