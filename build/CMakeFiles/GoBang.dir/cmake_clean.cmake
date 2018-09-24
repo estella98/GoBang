@@ -1,5 +1,8 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/GoBang.dir/GoBang.cc.o"
+  "CMakeFiles/GoBang.dir/Chessboard.cpp.o"
+  "CMakeFiles/GoBang.dir/GoBang.cpp.o"
+  "CMakeFiles/GoBang.dir/main.cpp.o"
+  "CMakeFiles/GoBang.dir/Decision.cpp.o"
   "GoBang.pdb"
   "GoBang"
 )

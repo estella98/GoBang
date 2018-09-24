@@ -57,41 +57,119 @@ include CMakeFiles/GoBang.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/GoBang.dir/flags.make
 
-CMakeFiles/GoBang.dir/GoBang.cc.o: CMakeFiles/GoBang.dir/flags.make
-CMakeFiles/GoBang.dir/GoBang.cc.o: ../GoBang.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/estellaliu/Desktop/GoBang/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/GoBang.dir/GoBang.cc.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/GoBang.dir/GoBang.cc.o -c /Users/estellaliu/Desktop/GoBang/GoBang.cc
+CMakeFiles/GoBang.dir/Chessboard.cpp.o: CMakeFiles/GoBang.dir/flags.make
+CMakeFiles/GoBang.dir/Chessboard.cpp.o: ../Chessboard.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/estellaliu/Desktop/GoBang/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/GoBang.dir/Chessboard.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/GoBang.dir/Chessboard.cpp.o -c /Users/estellaliu/Desktop/GoBang/Chessboard.cpp
 
-CMakeFiles/GoBang.dir/GoBang.cc.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/GoBang.dir/GoBang.cc.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/estellaliu/Desktop/GoBang/GoBang.cc > CMakeFiles/GoBang.dir/GoBang.cc.i
+CMakeFiles/GoBang.dir/Chessboard.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/GoBang.dir/Chessboard.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/estellaliu/Desktop/GoBang/Chessboard.cpp > CMakeFiles/GoBang.dir/Chessboard.cpp.i
 
-CMakeFiles/GoBang.dir/GoBang.cc.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GoBang.dir/GoBang.cc.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/estellaliu/Desktop/GoBang/GoBang.cc -o CMakeFiles/GoBang.dir/GoBang.cc.s
+CMakeFiles/GoBang.dir/Chessboard.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GoBang.dir/Chessboard.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/estellaliu/Desktop/GoBang/Chessboard.cpp -o CMakeFiles/GoBang.dir/Chessboard.cpp.s
 
-CMakeFiles/GoBang.dir/GoBang.cc.o.requires:
+CMakeFiles/GoBang.dir/Chessboard.cpp.o.requires:
 
-.PHONY : CMakeFiles/GoBang.dir/GoBang.cc.o.requires
+.PHONY : CMakeFiles/GoBang.dir/Chessboard.cpp.o.requires
 
-CMakeFiles/GoBang.dir/GoBang.cc.o.provides: CMakeFiles/GoBang.dir/GoBang.cc.o.requires
-	$(MAKE) -f CMakeFiles/GoBang.dir/build.make CMakeFiles/GoBang.dir/GoBang.cc.o.provides.build
-.PHONY : CMakeFiles/GoBang.dir/GoBang.cc.o.provides
+CMakeFiles/GoBang.dir/Chessboard.cpp.o.provides: CMakeFiles/GoBang.dir/Chessboard.cpp.o.requires
+	$(MAKE) -f CMakeFiles/GoBang.dir/build.make CMakeFiles/GoBang.dir/Chessboard.cpp.o.provides.build
+.PHONY : CMakeFiles/GoBang.dir/Chessboard.cpp.o.provides
 
-CMakeFiles/GoBang.dir/GoBang.cc.o.provides.build: CMakeFiles/GoBang.dir/GoBang.cc.o
+CMakeFiles/GoBang.dir/Chessboard.cpp.o.provides.build: CMakeFiles/GoBang.dir/Chessboard.cpp.o
+
+
+CMakeFiles/GoBang.dir/GoBang.cpp.o: CMakeFiles/GoBang.dir/flags.make
+CMakeFiles/GoBang.dir/GoBang.cpp.o: ../GoBang.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/estellaliu/Desktop/GoBang/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/GoBang.dir/GoBang.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/GoBang.dir/GoBang.cpp.o -c /Users/estellaliu/Desktop/GoBang/GoBang.cpp
+
+CMakeFiles/GoBang.dir/GoBang.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/GoBang.dir/GoBang.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/estellaliu/Desktop/GoBang/GoBang.cpp > CMakeFiles/GoBang.dir/GoBang.cpp.i
+
+CMakeFiles/GoBang.dir/GoBang.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GoBang.dir/GoBang.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/estellaliu/Desktop/GoBang/GoBang.cpp -o CMakeFiles/GoBang.dir/GoBang.cpp.s
+
+CMakeFiles/GoBang.dir/GoBang.cpp.o.requires:
+
+.PHONY : CMakeFiles/GoBang.dir/GoBang.cpp.o.requires
+
+CMakeFiles/GoBang.dir/GoBang.cpp.o.provides: CMakeFiles/GoBang.dir/GoBang.cpp.o.requires
+	$(MAKE) -f CMakeFiles/GoBang.dir/build.make CMakeFiles/GoBang.dir/GoBang.cpp.o.provides.build
+.PHONY : CMakeFiles/GoBang.dir/GoBang.cpp.o.provides
+
+CMakeFiles/GoBang.dir/GoBang.cpp.o.provides.build: CMakeFiles/GoBang.dir/GoBang.cpp.o
+
+
+CMakeFiles/GoBang.dir/main.cpp.o: CMakeFiles/GoBang.dir/flags.make
+CMakeFiles/GoBang.dir/main.cpp.o: ../main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/estellaliu/Desktop/GoBang/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/GoBang.dir/main.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/GoBang.dir/main.cpp.o -c /Users/estellaliu/Desktop/GoBang/main.cpp
+
+CMakeFiles/GoBang.dir/main.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/GoBang.dir/main.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/estellaliu/Desktop/GoBang/main.cpp > CMakeFiles/GoBang.dir/main.cpp.i
+
+CMakeFiles/GoBang.dir/main.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GoBang.dir/main.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/estellaliu/Desktop/GoBang/main.cpp -o CMakeFiles/GoBang.dir/main.cpp.s
+
+CMakeFiles/GoBang.dir/main.cpp.o.requires:
+
+.PHONY : CMakeFiles/GoBang.dir/main.cpp.o.requires
+
+CMakeFiles/GoBang.dir/main.cpp.o.provides: CMakeFiles/GoBang.dir/main.cpp.o.requires
+	$(MAKE) -f CMakeFiles/GoBang.dir/build.make CMakeFiles/GoBang.dir/main.cpp.o.provides.build
+.PHONY : CMakeFiles/GoBang.dir/main.cpp.o.provides
+
+CMakeFiles/GoBang.dir/main.cpp.o.provides.build: CMakeFiles/GoBang.dir/main.cpp.o
+
+
+CMakeFiles/GoBang.dir/Decision.cpp.o: CMakeFiles/GoBang.dir/flags.make
+CMakeFiles/GoBang.dir/Decision.cpp.o: ../Decision.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/estellaliu/Desktop/GoBang/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/GoBang.dir/Decision.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/GoBang.dir/Decision.cpp.o -c /Users/estellaliu/Desktop/GoBang/Decision.cpp
+
+CMakeFiles/GoBang.dir/Decision.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/GoBang.dir/Decision.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/estellaliu/Desktop/GoBang/Decision.cpp > CMakeFiles/GoBang.dir/Decision.cpp.i
+
+CMakeFiles/GoBang.dir/Decision.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GoBang.dir/Decision.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/estellaliu/Desktop/GoBang/Decision.cpp -o CMakeFiles/GoBang.dir/Decision.cpp.s
+
+CMakeFiles/GoBang.dir/Decision.cpp.o.requires:
+
+.PHONY : CMakeFiles/GoBang.dir/Decision.cpp.o.requires
+
+CMakeFiles/GoBang.dir/Decision.cpp.o.provides: CMakeFiles/GoBang.dir/Decision.cpp.o.requires
+	$(MAKE) -f CMakeFiles/GoBang.dir/build.make CMakeFiles/GoBang.dir/Decision.cpp.o.provides.build
+.PHONY : CMakeFiles/GoBang.dir/Decision.cpp.o.provides
+
+CMakeFiles/GoBang.dir/Decision.cpp.o.provides.build: CMakeFiles/GoBang.dir/Decision.cpp.o
 
 
 # Object files for target GoBang
 GoBang_OBJECTS = \
-"CMakeFiles/GoBang.dir/GoBang.cc.o"
+"CMakeFiles/GoBang.dir/Chessboard.cpp.o" \
+"CMakeFiles/GoBang.dir/GoBang.cpp.o" \
+"CMakeFiles/GoBang.dir/main.cpp.o" \
+"CMakeFiles/GoBang.dir/Decision.cpp.o"
 
 # External object files for target GoBang
 GoBang_EXTERNAL_OBJECTS =
 
-GoBang: CMakeFiles/GoBang.dir/GoBang.cc.o
+GoBang: CMakeFiles/GoBang.dir/Chessboard.cpp.o
+GoBang: CMakeFiles/GoBang.dir/GoBang.cpp.o
+GoBang: CMakeFiles/GoBang.dir/main.cpp.o
+GoBang: CMakeFiles/GoBang.dir/Decision.cpp.o
 GoBang: CMakeFiles/GoBang.dir/build.make
 GoBang: CMakeFiles/GoBang.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/estellaliu/Desktop/GoBang/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable GoBang"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/estellaliu/Desktop/GoBang/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable GoBang"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/GoBang.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -99,7 +177,10 @@ CMakeFiles/GoBang.dir/build: GoBang
 
 .PHONY : CMakeFiles/GoBang.dir/build
 
-CMakeFiles/GoBang.dir/requires: CMakeFiles/GoBang.dir/GoBang.cc.o.requires
+CMakeFiles/GoBang.dir/requires: CMakeFiles/GoBang.dir/Chessboard.cpp.o.requires
+CMakeFiles/GoBang.dir/requires: CMakeFiles/GoBang.dir/GoBang.cpp.o.requires
+CMakeFiles/GoBang.dir/requires: CMakeFiles/GoBang.dir/main.cpp.o.requires
+CMakeFiles/GoBang.dir/requires: CMakeFiles/GoBang.dir/Decision.cpp.o.requires
 
 .PHONY : CMakeFiles/GoBang.dir/requires
 

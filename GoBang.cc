@@ -18,7 +18,7 @@ typedef struct Coordinate
   int y;
 } Coordinate;
 
-string convertToString (char grid[][SIZE+1]);
+string convertToString(char grid[][SIZE + 1]);
 
 class GoBang
 {
@@ -111,7 +111,7 @@ public:
   }
   void PlayChess(Coordinate &pos, int player, int flag)
   {
-    
+
     while (1)
     {
       cout << "enter coordinate" << endl;
@@ -141,7 +141,11 @@ public:
     pos.x = x;
     pos.y = y;
     ChessBoard[pos.x][pos.y] = flag;
+    string result = convertToString(ChessBoard);
+    db->Put(leveldb::WriteOptions(), result, 2);
+
     cout << convertToString(ChessBoard) << endl;
+
     PrintChessBoard();
   }
 
@@ -163,7 +167,8 @@ public:
             (y < 15) && (y >= 0));
   }
 
-  int Victory(Coordinate &pos, char flag){
+  int Victory(Coordinate &pos, char flag)
+  {
     cout << "check" << flag << endl;
     //cout << pos.x << endl;
     //cout << pos.y << endl;
@@ -180,7 +185,7 @@ public:
         bool inrange = checkInRange(coordinateX + addX, coordinateY + addY);
         if (inrange && ChessBoard[coordinateX + addX][coordinateY + addY] == flag)
         {
-          cout <<" match one" <<endl;
+          cout << " match one" << endl;
           acc += 1;
           coordinateX += addX;
           coordinateY += addY;
@@ -219,39 +224,46 @@ private:
 int GoBang::arrayX[] = {1, 1, 0, -1};
 int GoBang::arrayY[] = {0, 1, 1, 1};
 
-
-string convertToString (char grid[][SIZE+1]){
+string convertToString(char grid[][SIZE + 1])
+{
   string status = "";
-  for (int i=1; i<=15; ++i){
-    for (int j=1; j<=15; ++j){
-      if (grid[i][j]==symbol1){
-       status += symbol1;
-    }
-      else if (grid[i][j]==symbol2){
-       status += symbol2;
-    }
-      else{
-        status+='b'; //b stands for blank
+  for (int i = 1; i <= 15; ++i)
+  {
+    for (int j = 1; j <= 15; ++j)
+    {
+      if (grid[i][j] == symbol1)
+      {
+        status += symbol1;
       }
-  }
+      else if (grid[i][j] == symbol2)
+      {
+        status += symbol2;
+      }
+      else
+      {
+        status += 'b'; //b stands for blank
+      }
+    }
   }
   return status;
 }
-
-
-int main()
+int createDataBase()
 {
-  // GoBang().PrintChessBoard();
-  leveldb::DB* db;
+  leveldb::DB *db;
   leveldb::Options options;
   options.create_if_missing = true;
-
   leveldb::Status status = leveldb::DB::Open(options, "./testdb", &db);
-  if (false == status.ok ()){
+  if (false == status.ok())
+  {
     cerr << "unable to open/create test database '.testdb' " << endl;
     cerr << status.ToString() << endl;
     return -1;
   }
+}
+
+int main()
+{
+  // GoBang().PrintChessBoard();
 
   GoBang().Play();
 }

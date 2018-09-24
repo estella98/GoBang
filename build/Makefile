@@ -123,32 +123,113 @@ GoBang/fast:
 	$(MAKE) -f CMakeFiles/GoBang.dir/build.make CMakeFiles/GoBang.dir/build
 .PHONY : GoBang/fast
 
-GoBang.o: GoBang.cc.o
+Chessboard.o: Chessboard.cpp.o
+
+.PHONY : Chessboard.o
+
+# target to build an object file
+Chessboard.cpp.o:
+	$(MAKE) -f CMakeFiles/GoBang.dir/build.make CMakeFiles/GoBang.dir/Chessboard.cpp.o
+.PHONY : Chessboard.cpp.o
+
+Chessboard.i: Chessboard.cpp.i
+
+.PHONY : Chessboard.i
+
+# target to preprocess a source file
+Chessboard.cpp.i:
+	$(MAKE) -f CMakeFiles/GoBang.dir/build.make CMakeFiles/GoBang.dir/Chessboard.cpp.i
+.PHONY : Chessboard.cpp.i
+
+Chessboard.s: Chessboard.cpp.s
+
+.PHONY : Chessboard.s
+
+# target to generate assembly for a file
+Chessboard.cpp.s:
+	$(MAKE) -f CMakeFiles/GoBang.dir/build.make CMakeFiles/GoBang.dir/Chessboard.cpp.s
+.PHONY : Chessboard.cpp.s
+
+Decision.o: Decision.cpp.o
+
+.PHONY : Decision.o
+
+# target to build an object file
+Decision.cpp.o:
+	$(MAKE) -f CMakeFiles/GoBang.dir/build.make CMakeFiles/GoBang.dir/Decision.cpp.o
+.PHONY : Decision.cpp.o
+
+Decision.i: Decision.cpp.i
+
+.PHONY : Decision.i
+
+# target to preprocess a source file
+Decision.cpp.i:
+	$(MAKE) -f CMakeFiles/GoBang.dir/build.make CMakeFiles/GoBang.dir/Decision.cpp.i
+.PHONY : Decision.cpp.i
+
+Decision.s: Decision.cpp.s
+
+.PHONY : Decision.s
+
+# target to generate assembly for a file
+Decision.cpp.s:
+	$(MAKE) -f CMakeFiles/GoBang.dir/build.make CMakeFiles/GoBang.dir/Decision.cpp.s
+.PHONY : Decision.cpp.s
+
+GoBang.o: GoBang.cpp.o
 
 .PHONY : GoBang.o
 
 # target to build an object file
-GoBang.cc.o:
-	$(MAKE) -f CMakeFiles/GoBang.dir/build.make CMakeFiles/GoBang.dir/GoBang.cc.o
-.PHONY : GoBang.cc.o
+GoBang.cpp.o:
+	$(MAKE) -f CMakeFiles/GoBang.dir/build.make CMakeFiles/GoBang.dir/GoBang.cpp.o
+.PHONY : GoBang.cpp.o
 
-GoBang.i: GoBang.cc.i
+GoBang.i: GoBang.cpp.i
 
 .PHONY : GoBang.i
 
 # target to preprocess a source file
-GoBang.cc.i:
-	$(MAKE) -f CMakeFiles/GoBang.dir/build.make CMakeFiles/GoBang.dir/GoBang.cc.i
-.PHONY : GoBang.cc.i
+GoBang.cpp.i:
+	$(MAKE) -f CMakeFiles/GoBang.dir/build.make CMakeFiles/GoBang.dir/GoBang.cpp.i
+.PHONY : GoBang.cpp.i
 
-GoBang.s: GoBang.cc.s
+GoBang.s: GoBang.cpp.s
 
 .PHONY : GoBang.s
 
 # target to generate assembly for a file
-GoBang.cc.s:
-	$(MAKE) -f CMakeFiles/GoBang.dir/build.make CMakeFiles/GoBang.dir/GoBang.cc.s
-.PHONY : GoBang.cc.s
+GoBang.cpp.s:
+	$(MAKE) -f CMakeFiles/GoBang.dir/build.make CMakeFiles/GoBang.dir/GoBang.cpp.s
+.PHONY : GoBang.cpp.s
+
+main.o: main.cpp.o
+
+.PHONY : main.o
+
+# target to build an object file
+main.cpp.o:
+	$(MAKE) -f CMakeFiles/GoBang.dir/build.make CMakeFiles/GoBang.dir/main.cpp.o
+.PHONY : main.cpp.o
+
+main.i: main.cpp.i
+
+.PHONY : main.i
+
+# target to preprocess a source file
+main.cpp.i:
+	$(MAKE) -f CMakeFiles/GoBang.dir/build.make CMakeFiles/GoBang.dir/main.cpp.i
+.PHONY : main.cpp.i
+
+main.s: main.cpp.s
+
+.PHONY : main.s
+
+# target to generate assembly for a file
+main.cpp.s:
+	$(MAKE) -f CMakeFiles/GoBang.dir/build.make CMakeFiles/GoBang.dir/main.cpp.s
+.PHONY : main.cpp.s
 
 # Help Target
 help:
@@ -159,9 +240,18 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... GoBang"
+	@echo "... Chessboard.o"
+	@echo "... Chessboard.i"
+	@echo "... Chessboard.s"
+	@echo "... Decision.o"
+	@echo "... Decision.i"
+	@echo "... Decision.s"
 	@echo "... GoBang.o"
 	@echo "... GoBang.i"
 	@echo "... GoBang.s"
+	@echo "... main.o"
+	@echo "... main.i"
+	@echo "... main.s"
 .PHONY : help
 
 

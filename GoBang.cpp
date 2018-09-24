@@ -148,3 +148,8 @@ std::string GoBang::Status()
 {
     return this->chessBoard.toStr();
 }
+
+void GoBang::PreviousInfo(struct Point &step, Player &player){
+    step = this->previousStep;
+    player = this->previousPlayer;
+}

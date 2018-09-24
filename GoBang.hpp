@@ -14,6 +14,7 @@ class GoBang
     bool Victory();
     void PrintChessBoard();
     std::string Status();
+    void PreviousInfo(struct Point &step, Player &player);
   protected:
     ChessBoard chessBoard;
     struct Point previousStep;

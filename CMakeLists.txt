@@ -6,5 +6,10 @@ set(CMAKE_CXX_STANDARD 17)
 
 include_directories("${LEVELDB_DIRECTORY}/include")
 link_directories("${LEVELDB_DIRECTORY}/lib")
-add_executable(GoBang GoBang.cc)
+add_executable(GoBang
+	Chessboard.cpp
+	GoBang.cpp
+	main.cpp
+	Decision.cpp
+)
 target_link_libraries(GoBang leveldb)
