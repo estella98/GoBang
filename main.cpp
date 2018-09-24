@@ -28,9 +28,9 @@ int main()
     while (true)
     {
         game.ComputerPlay(P1);
-        P1Status[times] = game.Status();
+        P1Status.push_back(game.Status());
         game.PreviousInfo(tempPoint, tempPlayer);
-        P1Decision[times] = tempPoint;
+        P1Decision.push_back(tempPoint);
         game.PrintChessBoard();
         if (game.Victory())
         {
@@ -39,9 +39,9 @@ int main()
             return 0;
         }
         game.ComputerPlay(P2);
-        P2Status[times] = game.Status();
+        P2Status.push_back(game.Status());
         game.PreviousInfo(tempPoint, tempPlayer);
-        P2Decision[times] = tempPoint;
+        P2Decision.push_back(tempPoint);
         game.PrintChessBoard();
         if (game.Victory())
         {
