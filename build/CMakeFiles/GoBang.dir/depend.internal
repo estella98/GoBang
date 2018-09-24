@@ -3,7 +3,8 @@
 
 CMakeFiles/GoBang.dir/GoBang.cc.o
  /Users/estellaliu/Desktop/GoBang/GoBang.cc
- /usr/local/Cellar/leveldb/1.20_2/include/leveldb/dumpfile.h
- /usr/local/Cellar/leveldb/1.20_2/include/leveldb/env.h
+ /usr/local/Cellar/leveldb/1.20_2/include/leveldb/db.h
+ /usr/local/Cellar/leveldb/1.20_2/include/leveldb/iterator.h
+ /usr/local/Cellar/leveldb/1.20_2/include/leveldb/options.h
  /usr/local/Cellar/leveldb/1.20_2/include/leveldb/slice.h
  /usr/local/Cellar/leveldb/1.20_2/include/leveldb/status.h

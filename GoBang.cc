@@ -3,7 +3,7 @@
 #include <stdlib.h>
 #include <time.h>
 
-#include <leveldb/dumpfile.h>
+#include <leveldb/db.h>
 
 using namespace std;
 
@@ -17,6 +17,8 @@ typedef struct Coordinate
   int x;
   int y;
 } Coordinate;
+
+string convertToString (char grid[][SIZE+1]);
 
 class GoBang
 {
@@ -132,15 +134,14 @@ public:
     while (1)
     {
       x = (rand() % SIZE) + 1;
-
       y = (rand() % SIZE) + 1;
-
       if (ChessBoard[x][y] == ChessBoardflag)
         break;
     }
     pos.x = x;
     pos.y = y;
     ChessBoard[pos.x][pos.y] = flag;
+    cout << convertToString(ChessBoard) << endl;
     PrintChessBoard();
   }
 
@@ -218,8 +219,39 @@ private:
 int GoBang::arrayX[] = {1, 1, 0, -1};
 int GoBang::arrayY[] = {0, 1, 1, 1};
 
+
+string convertToString (char grid[][SIZE+1]){
+  string status = "";
+  for (int i=1; i<=15; ++i){
+    for (int j=1; j<=15; ++j){
+      if (grid[i][j]==symbol1){
+       status += symbol1;
+    }
+      else if (grid[i][j]==symbol2){
+       status += symbol2;
+    }
+      else{
+        status+='b'; //b stands for blank
+      }
+  }
+  }
+  return status;
+}
+
+
 int main()
 {
   // GoBang().PrintChessBoard();
+  leveldb::DB* db;
+  leveldb::Options options;
+  options.create_if_missing = true;
+
+  leveldb::Status status = leveldb::DB::Open(options, "./testdb", &db);
+  if (false == status.ok ()){
+    cerr << "unable to open/create test database '.testdb' " << endl;
+    cerr << status.ToString() << endl;
+    return -1;
+  }
+
   GoBang().Play();
 }
