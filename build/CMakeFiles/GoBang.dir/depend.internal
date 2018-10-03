@@ -15,12 +15,25 @@ CMakeFiles/GoBang.dir/GoBang.cpp.o
  /Users/estellaliu/Desktop/GoBang/GoBang.hpp
  /Users/estellaliu/Desktop/GoBang/Player.hpp
  /Users/estellaliu/Desktop/GoBang/Point.hpp
-CMakeFiles/GoBang.dir/main.cpp.o
+CMakeFiles/GoBang.dir/RLGoBang.cpp.o
  /Users/estellaliu/Desktop/GoBang/ChessBoard.hpp
  /Users/estellaliu/Desktop/GoBang/Decision.hpp
  /Users/estellaliu/Desktop/GoBang/GoBang.hpp
  /Users/estellaliu/Desktop/GoBang/Player.hpp
  /Users/estellaliu/Desktop/GoBang/Point.hpp
+ /Users/estellaliu/Desktop/GoBang/RLGoBang.cpp
+ /Users/estellaliu/Desktop/GoBang/RLGoBang.hpp
+ /usr/local/Cellar/leveldb/1.20_2/include/leveldb/db.h
+ /usr/local/Cellar/leveldb/1.20_2/include/leveldb/iterator.h
+ /usr/local/Cellar/leveldb/1.20_2/include/leveldb/options.h
+ /usr/local/Cellar/leveldb/1.20_2/include/leveldb/slice.h
+ /usr/local/Cellar/leveldb/1.20_2/include/leveldb/status.h
+CMakeFiles/GoBang.dir/main.cpp.o
+ /Users/estellaliu/Desktop/GoBang/ChessBoard.hpp
+ /Users/estellaliu/Desktop/GoBang/GoBang.hpp
+ /Users/estellaliu/Desktop/GoBang/Player.hpp
+ /Users/estellaliu/Desktop/GoBang/Point.hpp
+ /Users/estellaliu/Desktop/GoBang/RLGoBang.hpp
  /Users/estellaliu/Desktop/GoBang/main.cpp
  /usr/local/Cellar/leveldb/1.20_2/include/leveldb/db.h
  /usr/local/Cellar/leveldb/1.20_2/include/leveldb/iterator.h

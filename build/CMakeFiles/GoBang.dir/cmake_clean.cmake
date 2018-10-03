@@ -3,6 +3,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/GoBang.dir/GoBang.cpp.o"
   "CMakeFiles/GoBang.dir/main.cpp.o"
   "CMakeFiles/GoBang.dir/Decision.cpp.o"
+  "CMakeFiles/GoBang.dir/RLGoBang.cpp.o"
   "GoBang.pdb"
   "GoBang"
 )

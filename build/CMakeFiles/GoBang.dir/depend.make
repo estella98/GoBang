@@ -15,11 +15,24 @@ CMakeFiles/GoBang.dir/GoBang.cpp.o: ../GoBang.hpp
 CMakeFiles/GoBang.dir/GoBang.cpp.o: ../Player.hpp
 CMakeFiles/GoBang.dir/GoBang.cpp.o: ../Point.hpp
 
+CMakeFiles/GoBang.dir/RLGoBang.cpp.o: ../ChessBoard.hpp
+CMakeFiles/GoBang.dir/RLGoBang.cpp.o: ../Decision.hpp
+CMakeFiles/GoBang.dir/RLGoBang.cpp.o: ../GoBang.hpp
+CMakeFiles/GoBang.dir/RLGoBang.cpp.o: ../Player.hpp
+CMakeFiles/GoBang.dir/RLGoBang.cpp.o: ../Point.hpp
+CMakeFiles/GoBang.dir/RLGoBang.cpp.o: ../RLGoBang.cpp
+CMakeFiles/GoBang.dir/RLGoBang.cpp.o: ../RLGoBang.hpp
+CMakeFiles/GoBang.dir/RLGoBang.cpp.o: /usr/local/Cellar/leveldb/1.20_2/include/leveldb/db.h
+CMakeFiles/GoBang.dir/RLGoBang.cpp.o: /usr/local/Cellar/leveldb/1.20_2/include/leveldb/iterator.h
+CMakeFiles/GoBang.dir/RLGoBang.cpp.o: /usr/local/Cellar/leveldb/1.20_2/include/leveldb/options.h
+CMakeFiles/GoBang.dir/RLGoBang.cpp.o: /usr/local/Cellar/leveldb/1.20_2/include/leveldb/slice.h
+CMakeFiles/GoBang.dir/RLGoBang.cpp.o: /usr/local/Cellar/leveldb/1.20_2/include/leveldb/status.h
+
 CMakeFiles/GoBang.dir/main.cpp.o: ../ChessBoard.hpp
-CMakeFiles/GoBang.dir/main.cpp.o: ../Decision.hpp
 CMakeFiles/GoBang.dir/main.cpp.o: ../GoBang.hpp
 CMakeFiles/GoBang.dir/main.cpp.o: ../Player.hpp
 CMakeFiles/GoBang.dir/main.cpp.o: ../Point.hpp
+CMakeFiles/GoBang.dir/main.cpp.o: ../RLGoBang.hpp
 CMakeFiles/GoBang.dir/main.cpp.o: ../main.cpp
 CMakeFiles/GoBang.dir/main.cpp.o: /usr/local/Cellar/leveldb/1.20_2/include/leveldb/db.h
 CMakeFiles/GoBang.dir/main.cpp.o: /usr/local/Cellar/leveldb/1.20_2/include/leveldb/iterator.h

@@ -204,6 +204,33 @@ GoBang.cpp.s:
 	$(MAKE) -f CMakeFiles/GoBang.dir/build.make CMakeFiles/GoBang.dir/GoBang.cpp.s
 .PHONY : GoBang.cpp.s
 
+RLGoBang.o: RLGoBang.cpp.o
+
+.PHONY : RLGoBang.o
+
+# target to build an object file
+RLGoBang.cpp.o:
+	$(MAKE) -f CMakeFiles/GoBang.dir/build.make CMakeFiles/GoBang.dir/RLGoBang.cpp.o
+.PHONY : RLGoBang.cpp.o
+
+RLGoBang.i: RLGoBang.cpp.i
+
+.PHONY : RLGoBang.i
+
+# target to preprocess a source file
+RLGoBang.cpp.i:
+	$(MAKE) -f CMakeFiles/GoBang.dir/build.make CMakeFiles/GoBang.dir/RLGoBang.cpp.i
+.PHONY : RLGoBang.cpp.i
+
+RLGoBang.s: RLGoBang.cpp.s
+
+.PHONY : RLGoBang.s
+
+# target to generate assembly for a file
+RLGoBang.cpp.s:
+	$(MAKE) -f CMakeFiles/GoBang.dir/build.make CMakeFiles/GoBang.dir/RLGoBang.cpp.s
+.PHONY : RLGoBang.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -249,6 +276,9 @@ help:
 	@echo "... GoBang.o"
 	@echo "... GoBang.i"
 	@echo "... GoBang.s"
+	@echo "... RLGoBang.o"
+	@echo "... RLGoBang.i"
+	@echo "... RLGoBang.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

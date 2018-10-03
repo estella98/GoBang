@@ -1,4 +1,5 @@
 #include "Decision.hpp"
+#include <random>
 
 Decision::Decision()
     : s((226) * sizeof(unsigned int), '\0')
@@ -44,4 +45,39 @@ void Decision::add1(Point position)
 std::string Decision::toStr()
 {
     return this->s;
+}
+
+Point Decision::BestChoice(){
+    unsigned int maxval(0);
+    Point maxPt = {0, 0};
+    for(int i = 0; i < 15; ++i){
+        for(int j = 0; j < 15; ++j){
+            Point pt = {i, j};
+            if(this->get(pt) > maxval){
+                maxPt = pt;
+            }
+        }
+    }
+    return maxPt;
+}
+
+Point Decision::RandomChoice(){
+    std::size_t const addr = 255 * sizeof(unsigned int);
+    // fetch the 256-th unsigned int;
+    unsigned int *data = (unsigned int *)&this->s[addr];
+    // now data = \sum_{n = 0}^254 (int) str
+    std::default_random_engine generator;
+    std::uniform_int_distribution<int> distribution(0,*data);
+    int randomval = distribution(generator);
+    Point maxPt = {0, 0};
+    for(int i = 0; i < 15; ++i){
+        for(int j = 0; j < 15; ++j){
+            Point pt = {i, j};
+            randomval = randomval - get(pt);
+            if(randomval <= 0){
+                return pt;
+            }
+        }
+    }
+    return maxPt;
 }

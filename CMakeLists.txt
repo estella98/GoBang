@@ -11,5 +11,6 @@ add_executable(GoBang
 	GoBang.cpp
 	main.cpp
 	Decision.cpp
+	RLGoBang.cpp
 )
 target_link_libraries(GoBang leveldb)

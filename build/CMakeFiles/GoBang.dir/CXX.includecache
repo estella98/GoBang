@@ -19,6 +19,8 @@ ChessBoard.hpp
 /Users/estellaliu/Desktop/GoBang/Decision.cpp
 Decision.hpp
 /Users/estellaliu/Desktop/GoBang/Decision.hpp
+random
+-
 
 /Users/estellaliu/Desktop/GoBang/Decision.hpp
 string
@@ -48,20 +50,30 @@ Player.hpp
 
 /Users/estellaliu/Desktop/GoBang/Point.hpp
 
-/Users/estellaliu/Desktop/GoBang/main.cpp
-GoBang.hpp
-/Users/estellaliu/Desktop/GoBang/GoBang.hpp
-Player.hpp
-/Users/estellaliu/Desktop/GoBang/Player.hpp
-Point.hpp
-/Users/estellaliu/Desktop/GoBang/Point.hpp
-iostream
--
-leveldb/db.h
-/Users/estellaliu/Desktop/GoBang/leveldb/db.h
+/Users/estellaliu/Desktop/GoBang/RLGoBang.cpp
+RLGoBang.hpp
+/Users/estellaliu/Desktop/GoBang/RLGoBang.hpp
 Decision.hpp
 /Users/estellaliu/Desktop/GoBang/Decision.hpp
 vector
+-
+string
+-
+
+/Users/estellaliu/Desktop/GoBang/RLGoBang.hpp
+GoBang.hpp
+/Users/estellaliu/Desktop/GoBang/GoBang.hpp
+leveldb/db.h
+/Users/estellaliu/Desktop/GoBang/leveldb/db.h
+
+/Users/estellaliu/Desktop/GoBang/main.cpp
+RLGoBang.hpp
+/Users/estellaliu/Desktop/GoBang/RLGoBang.hpp
+Player.hpp
+/Users/estellaliu/Desktop/GoBang/Player.hpp
+leveldb/db.h
+/Users/estellaliu/Desktop/GoBang/leveldb/db.h
+iostream
 -
 
 /usr/local/Cellar/leveldb/1.20_2/include/leveldb/db.h
